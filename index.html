@@ -13,14 +13,14 @@
         <a href="https://github.com/cse110-sp26-group23/cse110-sp26-group23">Github Repository</a>
     </nav>
     <header>
-        <h1></h1>
+        <h1>Meeting Minutes</h1>
     </header>
     <main>
         <article>
             <header>
-                <h1>Firing Bob</h1>
-                <h2>Seperation Meeting</h2>
-                <h2>April 8th, 2026</h2>
+                <h2>Firing Bob</h2>
+                <h3>Seperation Meeting</h3>
+                <h3>April 8th, 2026</h3>
             </header>
             <hr />
             <section>
@@ -38,22 +38,18 @@
                 <ul>
                     <li>Fire Bob</li>
                     <li>Console Bob</li>
-                    <li>Hire a <span><em>"replacement"</em></span> (LLM) for Bob</li>
-                    <li>
-                        <h3>Unfinished Business</h3>
-                        <ul>
-                            <li>Find a less meaningful name for this meeting</li>
-                            <li>Make all functions <strong>longer</strong></li>
-                            <li>Make all functions <strong>longer</strong></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>New Business</h3>
-                        <ul>
-                            <li>Find an even less meaningful name for this meeting</li>
-                            <li>Remove all style guides</li>
-                        </ul>
-                    </li>
+                    <li>Hire a <span><em>"replacement"</em></span> <i>(LLM)</i> for Bob</li>
+                </ul>
+                <h3>Unfinished Business</h3>
+                <ul>
+                    <li>Find a less meaningful name for this meeting</li>
+                    <li>Make all functions <strong>longer</strong></li>
+                    <li>Make all functions <b>longer</b></li>
+                </ul>
+                <h3>New Business</h3>
+                <ul>
+                    <li>Find an even less meaningful name for this meeting</li>
+                    <li>Remove all style guides</li>
                 </ul>
             </section>
             <section>
@@ -70,7 +66,7 @@
                         later."</p>
                 </div>
                 <div class="comment">
-                    <p><strong>Kernighan:</strong> "Who reads these days anyway..."</p>
+                    <p><strong>Kernighan:</strong> <span>"Who reads these days anyway..."</span></p>
                 </div>
             </section>
             <section>
@@ -98,7 +94,6 @@
                     <p>This audio clip is taken from the movie "Office Space" (1999)</p>
                 </details>
             </section>
-            <footer></footer>
         </article>
     </main>
     <br>
@@ -111,12 +106,32 @@
             <legend>Write Comment</legend>
             <div id="comments-container"></div>
             <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+                <br>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" />
+                <br>
+
+                <label>Enjoyed the meeting?
+                    <input type="radio" name="enjoyed" value="yes" /> Yes
+                    <input type="radio" name="enjoyed" value="no" /> No
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="anonymous" value="anonymous" /> Post anonymously
+                </label>
+                <br>
+
                 <label for="mood">Mood</label>
                 <select id="mood" name="mood">
                     <option value="happy">Happy</option>
                     <option value="sad">Sad</option>
                     <option value="angry">Angry</option>
                 </select>
+                <br>
 
                 <label for="topic">Topic</label>
                 <input list="topics" id="topic" name="topic" />
@@ -125,9 +140,12 @@
                     <option value="Clean Code"></option>
                     <option value="AI"></option>
                 </datalist>
+                <br>
 
-                <label for="comment"></label>
+                <label for="comment">Comment</label>
+                <br>
                 <textarea id="comment" name="comment"></textarea>
+                <br>
                 <input type="submit" value="Submit">
             </form>
         </fieldset>
