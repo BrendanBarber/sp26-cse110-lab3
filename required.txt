@@ -1,0 +1,18 @@
+Features to include:
+
+Comments
+Color (all variations)
+CSS variables with fallbakcs
+Background color
+3 unique relative units
+3 unique absolute units
+Box Model (margin, padding, border) must use both long and short hand notations for each of the following: margin, padding, border
+Text (color, decoration, align)
+Display (none, block, inline-block, inline) at least 2 of these.
+Sizing (height, width, max-width, min-width)
+Position (static, relative, fixed, absolute, sticky) at least 2 of these
+Psuedo-class (:hover, :active)
+Layouts (Flexbox, Grid) Must have more than two children within the element that is using flexbox. Must use minimum three of the flexbox related attributes and Must have more than two children within the element that is using the grid. Must use a minimum of three of the grid related attributes
+Responsiveness (At least one query based on the screen width) 
+Check the DevTools in your browser! Make sure your site works and looks fine on the three main types of form factors (Very small screen (phone), tablet or smaller laptop, and desktop). The layout of your page should automatically reflow when the size changes, meaning, we shouldn't have to pinch and zoom in a lot to read text, click buttons, etc.
+Fonts (Include 3rd party font) loaded from either HTML or CSS
