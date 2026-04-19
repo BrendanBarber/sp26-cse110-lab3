@@ -6,18 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <a href="https://github.com/cse110-sp26-group23/cse110-sp26-group23">Github Repository</a>
     </nav>
-    <header>
+    <header id="main-header">
         <h1>Meeting Minutes</h1>
     </header>
     <main>
         <article>
-            <header>
+            <header id="small-header">
                 <h2>Firing Bob</h2>
                 <h3>Separation Meeting</h3>
                 <h3>April 8th, 2026</h3>
@@ -71,11 +75,11 @@
             </section>
             <section>
                 <h2>Diagram from Meeting</h2>
-                <img src="assets/BobExit.drawio.png" alt="Bob's exit diagram" width="400" height="300">
+                <img id="diagram" src="assets/BobExit.drawio.png" alt="Bob's exit diagram" width="400" height="300">
             </section>
             <section>
                 <h2>Video from Meeting</h2>
-                <video width="400" height="300" controls>
+                <video id="video"width="400" height="300" controls>
                     <source src="assets/BobExit.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -85,7 +89,7 @@
                 </details>
 
                 <h2>Audio from Meeting</h2>
-                <audio controls>
+                <audio id="audio" controls>
                     <source src="assets/BobExitAudio.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
@@ -101,27 +105,28 @@
     <br>
     <footer>
         <h2>Comment Section</h2>
-        <button>Load Comments</button>
+        <button id="load-comments">Load Comments</button>
         <fieldset>
             <legend>Write Comment</legend>
             <div id="comments-container"></div>
             <form>
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
-                <br>
 
                 <label for="date">Date</label>
                 <input type="date" id="date" name="date">
-                <br>
 
                 <label for="enjoyed-yes">Enjoyed the meeting?</label>
-                <input type="radio" id="enjoyed-yes" name="enjoyed" value="yes"> Yes
-                <input type="radio" id="enjoyed-no" name="enjoyed" value="no"> No
-                <br>
+                <div>
+                    <input type="radio" id="enjoyed-yes" name="enjoyed" value="yes"> Yes
+                    <input type="radio" id="enjoyed-no" name="enjoyed" value="no"> No
+                </div>
+               
 
                 <label for="anonymous">Post anonymously</label>
-                <input type="checkbox" id="anonymous" name="anonymous" value="anonymous">
-                <br>
+                <div>
+                    <input type="checkbox" id="anonymous" name="anonymous" value="anonymous"> Set Anonymous
+                </div>
 
                 <label for="mood">Mood</label>
                 <select id="mood" name="mood">
@@ -129,7 +134,6 @@
                     <option value="sad">Sad</option>
                     <option value="angry">Angry</option>
                 </select>
-                <br>
 
                 <label for="topic">Topic</label>
                 <input list="topics" id="topic" name="topic">
@@ -138,12 +142,10 @@
                     <option value="Clean Code"></option>
                     <option value="AI"></option>
                 </datalist>
-                <br>
+            
 
                 <label for="comment">Comment</label>
-                <br>
                 <textarea id="comment" name="comment"></textarea>
-                <br>
                 <input type="submit" value="Submit">
             </form>
         </fieldset>
