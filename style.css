@@ -2,17 +2,6 @@
 
 :root {
     --primary: hsl(195, 60%, 35%);
-    --primary-light: hsl(195, 50%, 85%);
-    --primary-dark: hsl(195, 60%, 25%);
-    --accent: hsl(20, 80%, 55%);
-    --bg: hsl(210, 20%, 95%);
-    --surface: #ffffff;
-    --text: #1a1a2e;
-    --text-muted: hsl(210, 10%, 45%);
-    --border: hsl(210, 15%, 82%);
-    --shadow: rgba(0, 0, 0, 0.08);
-    --main-background-color: hsl(180, 50%, 80%, 0.5);
-    --max-content: 860px;
 }
 
 *, *::before, *::after {
@@ -22,14 +11,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--bg);
-    color: var(--text);
+    background-color: hsl(210, 20%, 95%);
+    color: #1a1a2e;
     font-family: 'Sekuya', Georgia, serif;
     line-height: 1.7;
 }
 
 nav {
-    background-color: var(--primary);
+    background-color: hsl(195, 60%, 35%);
     color: #ffffff;
     padding: 0.8rem 2rem;
     position: sticky;
@@ -48,12 +37,12 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--primary-light);
+    color: hsl(195, 50%, 85%);
     text-decoration: underline;
 }
 
 #main-header {
-    background-color: var(--primary);
+    background-color: hsl(195, 60%, 35%);
     color: #ffffff;
     text-align: center;
     padding: 3rem 1rem 2.5rem;
@@ -68,10 +57,10 @@ nav a:hover {
 }
 
 #small-header {
-    background-color: var(--main-background-color, cyan);
-    color: var(--text);
+    background-color: hsl(180, 50%, 80%, 0.5);
+    color: #1a1a2e;
     padding: 1.5rem 2rem;
-    border-bottom: 3px solid var(--primary);
+    border-bottom: 3px solid hsl(195, 60%, 35%);
 }
 
 #small-header h2 {
@@ -82,7 +71,7 @@ nav a:hover {
 #small-header h3 {
     margin: 0.2rem 0 0;
     font-size: 0.95rem;
-    color: var(--text-muted);
+    color: hsl(210, 10%, 45%);
     font-weight: normal;
 }
 
@@ -96,16 +85,16 @@ main {
 }
 
 article {
-    max-width: var(--max-content);
+    max-width: 860px;
     margin-left: auto;
     margin-right: auto;
-    background-color: var(--surface);
+    background-color: #ffffff;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 4px 24px var(--shadow);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     border-width: 1px;
     border-style: solid;
-    border-color: var(--border);
+    border-color: hsl(210, 15%, 82%);
 }
 
 section {
@@ -113,7 +102,7 @@ section {
     padding-bottom: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid hsl(210, 15%, 82%);
 }
 
 section:last-of-type {
@@ -121,19 +110,19 @@ section:last-of-type {
 }
 
 section h2 {
-    color: var(--primary);
+    color: hsl(195, 60%, 35%);
     font-size: 1.15rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--primary-light);
+    border-bottom: 2px solid hsl(195, 50%, 85%);
     padding-bottom: 0.4rem;
 }
 
 section h3 {
     font-size: 1rem;
-    color: var(--text-muted);
+    color: hsl(210, 10%, 45%);
 }
 
 ol, ul {
@@ -147,7 +136,7 @@ li {
 
 .comment {
     background-color: hsl(210, 30%, 97%);
-    border-left: 4px solid var(--primary);
+    border-left: 4px solid hsl(195, 60%, 35%);
     margin: 0.6rem 0;
     padding: 0.7rem 1rem;
     border-radius: 0 8px 8px 0;
@@ -167,7 +156,7 @@ li {
     height: auto;
     border-width: 2px;
     border-style: solid;
-    border-color: var(--border);
+    border-color: hsl(210, 15%, 82%);
     border-radius: 10px;
     padding: 4pt;
     margin-left: auto;
@@ -205,14 +194,14 @@ li {
 
 details {
     font-size: 0.875rem;
-    color: var(--text-muted);
+    color: hsl(210, 10%, 45%);
     margin-top: 0.5rem;
     text-align: center;
 }
 
 hr {
     border: none;
-    border-top: 1px solid var(--border);
+    border-top: 1px solid hsl(210, 15%, 82%);
     margin: 0;
 }
 
@@ -222,13 +211,13 @@ footer {
     align-items: center;
     gap: 1.5rem;
     padding: 2.5rem 1rem;
-    max-width: var(--max-content);
+    max-width: 860px;
     margin-left: auto;
     margin-right: auto;
 }
 
 footer h2 {
-    color: var(--primary);
+    color: hsl(195, 60%, 35%);
     font-size: 1.5rem;
     margin: 0;
     text-align: center;
@@ -242,7 +231,7 @@ footer h2 {
     padding: 0.6em 1.8em;
     font-size: 1rem;
     font-family: inherit;
-    background-color: var(--primary);
+    background-color: hsl(195, 60%, 35%);
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -250,7 +239,7 @@ footer h2 {
 }
 
 #load-comments:hover {
-    background-color: var(--primary-dark);
+    background-color: hsl(195, 60%, 25%);
 }
 
 #load-comments:active {
@@ -258,17 +247,17 @@ footer h2 {
 }
 
 fieldset {
-    border: 2px solid var(--border);
+    border: 2px solid hsl(210, 15%, 82%);
     border-radius: 12px;
     padding: 1.5rem 2rem;
     width: 100%;
     max-width: 600px;
-    background-color: var(--surface);
-    box-shadow: 0 2px 12px var(--shadow);
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 legend {
-    color: var(--primary);
+    color: hsl(195, 60%, 35%);
     font-weight: bold;
     padding: 0 0.6rem;
     font-size: 1rem;
@@ -285,7 +274,7 @@ form {
 
 form label {
     font-size: 0.875rem;
-    color: var(--text-muted);
+    color: hsl(210, 10%, 45%);
     font-weight: 700;
     white-space: nowrap;
 }
@@ -295,12 +284,12 @@ form input[type="date"],
 form select,
 input[list] {
     padding: 0.4rem 0.6rem;
-    border: 1px solid var(--border);
+    border: 1px solid hsl(210, 15%, 82%);
     border-radius: 5px;
     font-family: inherit;
     font-size: 0.9rem;
     background-color: hsl(210, 20%, 99%);
-    color: var(--text);
+    color: #1a1a2e;
     width: 100%;
 }
 
@@ -308,7 +297,7 @@ form input[type="text"]:hover,
 form input[type="date"]:hover,
 form select:hover,
 input[list]:hover {
-    border-color: var(--primary);
+    border-color: hsl(195, 60%, 35%);
 }
 
 form textarea,
@@ -318,7 +307,7 @@ form input[type="submit"] {
 
 form textarea {
     padding: 0.5rem 0.6rem;
-    border: 1px solid var(--border);
+    border: 1px solid hsl(210, 15%, 82%);
     border-radius: 5px;
     font-family: inherit;
     font-size: 0.9rem;
@@ -326,17 +315,17 @@ form textarea {
     resize: vertical;
     width: 100%;
     background-color: hsl(210, 20%, 99%);
-    color: var(--text);
+    color: #1a1a2e;
 }
 
 form textarea:hover {
-    border-color: var(--primary);
+    border-color: hsl(195, 60%, 35%);
 }
 
 form input[type="submit"] {
     display: inline-block;
     padding: 0.55em 2em;
-    background-color: var(--primary);
+    background-color: hsl(195, 60%, 35%);
     color: #ffffff;
     border: none;
     border-radius: 8px;
@@ -347,7 +336,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: var(--primary-dark);
+    background-color: hsl(195, 60%, 25%);
 }
 
 form input[type="submit"]:active {
@@ -421,8 +410,8 @@ div.comment:hover {
 }
 
 fieldset:has(:focus) {
-    border-color: var(--primary);
-    box-shadow: 0 0 0 3px var(--primary-light, lightblue);
+    border-color: hsl(195, 60%, 35%);
+    box-shadow: 0 0 0 3px hsl(195, 50%, 85%);
 }
 
 section:has(img) {
