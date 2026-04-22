@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS: highlight the nav link on focus */
+        nav a:focus {
+            outline: 2px solid #ffffff;
+            outline-offset: 3px;
+        }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
@@ -105,7 +112,7 @@
     <br>
     <footer>
         <h2>Comment Section</h2>
-        <button id="load-comments">Load Comments</button>
+        <button id="load-comments" style="letter-spacing: 0.05em;">Load Comments</button>
         <fieldset>
             <legend>Write Comment</legend>
             <div id="comments-container"></div>
